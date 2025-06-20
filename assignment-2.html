@@ -4,85 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time-Table</title>
+    <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
+<body class="bg-gray-100 p-4 md:p-8">
 
-    <h1>College TimeTable</h1>
+    <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">College TimeTable</h1>
 
-    
-    <table border="1">
-        <tr>
-            <th>Day / Time</th>
-            <th>9:00 - 10:00</th>
-            <th>10:00 - 11:00</th>
-            <th>11:00 - 12:00</th>
-            <th>12:00 - 1:00</th>
-            <th>1:00 - 2:00</th>
-            <th>2:00 - 3:00</th>
-            <th>3:00 - 4:00</th>
-        </tr>
-        <tr>
-            <td>Monday</td>
-            <td>Math</td>
-            <td>Physics</td>
-            <td>English</td>
-            <td>Break</td>
-            <td>Chemistry</td>
-            <td>Biology</td>
-            <td>History</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>English</td>
-            <td>Math</td>
-            <td>Computer</td>
-            <td>Break</td>
-            <td>Geography</td>
-            <td>Physics</td>
-            <td>Art</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>Biology</td>
-            <td>History</td>
-            <td>Math</td>
-            <td>Break</td>
-            <td>Chemistry</td>
-            <td>English</td>
-            <td>PE</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>Physics</td>
-            <td>Math</td>
-            <td>Computer</td>
-            <td>Break</td>
-            <td>English</td>
-            <td>Geography</td>
-            <td>Biology</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Math</td>
-            <td>Chemistry</td>
-            <td>Physics</td>
-            <td>Break</td>
-            <td>English</td>
-            <td>Art</td>
-            <td>History</td>
-        </tr>
-        <tr>
-            <td>Saturday</td>
-            <td>PE</td>
-            <td>Computer</td>
-            <td>Biology</td>
-            <td>Break</td>
-            <td>Math</td>
-            <td>English</td>
-            <td>Library</td>
-        </tr>
-    </table>
+    <div class="overflow-x-auto">
+        <table class="w-full bg-white border border-gray-300 rounded-lg shadow-md">
+            <thead>
+                <tr class="bg-blue-500 text-white">
+                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Day / Time</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center font-semibold">9:00 - 10:00</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center font-semibold">10:00 - 11:00</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center font-semibold">11:00 - 12:00</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center font-semibold">12:00 - 1:00</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center font-semibold">1:00 - 2:00</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center font-semibold">2:00 - 3:00</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center font-semibold">3:00 - 4:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 font-medium text-gray-700 bg-gray-50">Monday</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Math</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Physics</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">English</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center bg-yellow-100 font-medium">Break</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Chemistry</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Biology</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">History</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 font-medium text-gray-700 bg-gray-50">Tuesday</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">English</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Math</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Computer</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center bg-yellow-100 font-medium">Break</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Geography</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Physics</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Art</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 font-medium text-gray-700 bg-gray-50">Wednesday</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Biology</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">History</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Math</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center bg-yellow-100 font-medium">Break</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Chemistry</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">English</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">PE</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 font-medium text-gray-700 bg-gray-50">Thursday</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Physics</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Math</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Computer</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center bg-yellow-100 font-medium">Break</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">English</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Geography</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Biology</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 font-medium text-gray-700 bg-gray-50">Friday</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Math</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Chemistry</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Physics</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center bg-yellow-100 font-medium">Break</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">English</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Art</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">History</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 font-medium text-gray-700 bg-gray-50">Saturday</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">PE</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Computer</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Biology</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center bg-yellow-100 font-medium">Break</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Math</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">English</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Library</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    
 </body>
 </html>
